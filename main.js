@@ -33,6 +33,7 @@ window.onload = (event) => {
     var bambooOutside = document.getElementById("bamboo-circle-outside");
     var blackOutside = document.getElementById("black-circle-outside");
     var mahoganyOutside = document.getElementById("mahogany-circle-outside");
+    
 
 
 
@@ -275,8 +276,6 @@ window.onload = (event) => {
 
 
 
-
-
     var primaryBookmark = document.getElementById("bookmark-icon");
     var replaceBookmarked = document.getElementById("bookmarked-icon");
 
@@ -285,12 +284,35 @@ window.onload = (event) => {
         replaceBookmarked.style.display = "flex";
     });
 
+
+
+    var dropdown = document.getElementById("dropdown");
+    var dropdownMenu = document.getElementById("menu123");
+    var dropdownClosed = document.getElementById("dropdown-closed");
+    var hrefAbout = document.getElementById("href-about");
+    var hrefStart = document.getElementById("href-started");
+
+
+    dropdown.addEventListener("click", event => {
+        dropdownMenu.style.display = "flex";
+    });
+
+    dropdownClosed.addEventListener("click", event => {
+        dropdownMenu.style.display = "none";
+    });
+
+    hrefAbout.addEventListener("click", event => {
+        dropdownMenu.style.display = "none";
+    });
+
+    hrefStart.addEventListener("click", event => {
+        modal.style.display = "flex";
+        dropdownMenu.style.display = "none";
+    });
+
+
+
   };
 
-
-
-  function menuFunction() {
-      document.getElementById("dropdown").classList.toggle("show");
-  }
 
 
