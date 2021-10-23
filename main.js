@@ -35,7 +35,7 @@ window.onload = (event) => {
     var mahoganyOutside = document.getElementById("mahogany-circle-outside");
 
 
-    
+
     backProject.addEventListener("click", event => {
         modal.style.display = "flex";
     });
@@ -86,12 +86,12 @@ window.onload = (event) => {
             bambooCircle.style.display = "none";
             bambooBorder.style.border = "hidden";
 
-        }   else if (blackInvisible.style.display == "flex") {
+        }  else if (blackInvisible.style.display == "flex") {
                     blackInvisible.style.display = "none";
                     blackCircle.style.display = "none";
                     blackBorder.style.border = "hidden";
 
-            }   else if (mahoganyInvisible.style.display == "flex") {
+            }  else if (mahoganyInvisible.style.display == "flex") {
                         mahoganyInvisible.style.display = "none";
                         mahoganyCircle.style.display = "none";
                         mahoganyBorder.style.border = "hidden";
@@ -101,6 +101,7 @@ window.onload = (event) => {
 
     greenPledge.addEventListener("click", event => {
         popUp.style.visibility = "visible";
+        modal.style.display = "none";
     });
 
     bambooModal.addEventListener("click", event => {
@@ -113,12 +114,12 @@ window.onload = (event) => {
             pledgeCircle.style.display = "none";
             pledgeBorder.style.border = "hidden";
 
-        }   else if (blackInvisible.style.display == "flex") {
+        }  else if (blackInvisible.style.display == "flex") {
                     blackInvisible.style.display = "none";
                     blackCircle.style.display = "none";
                     blackBorder.style.border = "hidden";
 
-            }   else if (mahoganyInvisible.style.display == "flex") {
+            }  else if (mahoganyInvisible.style.display == "flex") {
                         mahoganyInvisible.style.display = "none";
                         mahoganyCircle.style.display = "none";
                         mahoganyBorder.style.border = "hidden";
@@ -127,6 +128,7 @@ window.onload = (event) => {
 
     greenBamboo.addEventListener("click", event => {
         popUp.style.visibility = "visible";
+        modal.style.display = "none";
     });
 
     blackModal.addEventListener("click", event => {
@@ -139,12 +141,12 @@ window.onload = (event) => {
             pledgeCircle.style.display = "none";
             pledgeBorder.style.border = "hidden";
 
-        }   else if (bambooInvisible.style.display == "flex") {
+        }  else if (bambooInvisible.style.display == "flex") {
                     bambooInvisible.style.display = "none";
                     bambooCircle.style.display = "none";
                     bambooBorder.style.border = "hidden";
 
-            }   else if (mahoganyInvisible.style.display == "flex") {
+            }  else if (mahoganyInvisible.style.display == "flex") {
                         mahoganyInvisible.style.display = "none";
                         mahoganyCircle.style.display = "none";
                         mahoganyBorder.style.border = "hidden";
@@ -153,6 +155,7 @@ window.onload = (event) => {
 
     greenBlack.addEventListener("click", event => {
         popUp.style.visibility = "visible";
+        modal.style.display = "none";
     });
 
     mahoganyModal.addEventListener("click", event => {
@@ -165,12 +168,12 @@ window.onload = (event) => {
             pledgeCircle.style.display = "none";
             pledgeBorder.style.border = "hidden";
 
-        }   else if (bambooInvisible.style.display == "flex") {
+        }  else if (bambooInvisible.style.display == "flex") {
                     bambooInvisible.style.display = "none";
                     bambooCircle.style.display = "none";
                     bambooBorder.style.border = "hidden";
 
-            }   else if (blackInvisible.style.display == "flex") {
+            }  else if (blackInvisible.style.display == "flex") {
                         blackInvisible.style.display = "none";
                         blackCircle.style.display = "none";
                         blackBorder.style.border = "hidden";
@@ -192,12 +195,12 @@ window.onload = (event) => {
             bambooCircle.style.display = "none";
             bambooBorder.style.border = "hidden";
 
-        }   else if (blackInvisible.style.display == "flex") {
+        }  else if (blackInvisible.style.display == "flex") {
                     blackInvisible.style.display = "none";
                     blackCircle.style.display = "none";
                     blackBorder.style.border = "hidden";
 
-            }   else if (mahoganyInvisible.style.display == "flex") {
+            }  else if (mahoganyInvisible.style.display == "flex") {
                         mahoganyInvisible.style.display = "none";
                         mahoganyCircle.style.display = "none";
                         mahoganyBorder.style.border = "hidden";
@@ -214,12 +217,12 @@ window.onload = (event) => {
             pledgeCircle.style.display = "none";
             pledgeBorder.style.border = "hidden";
 
-        }   else if (blackInvisible.style.display == "flex") {
+        }  else if (blackInvisible.style.display == "flex") {
                     blackInvisible.style.display = "none";
                     blackCircle.style.display = "none";
                     blackBorder.style.border = "hidden";
 
-            }   else if (mahoganyInvisible.style.display == "flex") {
+            }  else if (mahoganyInvisible.style.display == "flex") {
                         mahoganyInvisible.style.display = "none";
                         mahoganyCircle.style.display = "none";
                         mahoganyBorder.style.border = "hidden";
@@ -236,12 +239,12 @@ window.onload = (event) => {
             pledgeCircle.style.display = "none";
             pledgeBorder.style.border = "hidden";
 
-        }   else if (bambooInvisible.style.display == "flex") {
+        }  else if (bambooInvisible.style.display == "flex") {
                     bambooInvisible.style.display = "none";
                     bambooCircle.style.display = "none";
                     bambooBorder.style.border = "hidden";
 
-            }   else if (mahoganyInvisible.style.display == "flex") {
+            }  else if (mahoganyInvisible.style.display == "flex") {
                         mahoganyInvisible.style.display = "none";
                         mahoganyCircle.style.display = "none";
                         mahoganyBorder.style.border = "hidden";
@@ -258,12 +261,12 @@ window.onload = (event) => {
             pledgeCircle.style.display = "none";
             pledgeBorder.style.border = "hidden";
 
-        }   else if (bambooInvisible.style.display == "flex") {
+        }  else if (bambooInvisible.style.display == "flex") {
                     bambooInvisible.style.display = "none";
                     bambooCircle.style.display = "none";
                     bambooBorder.style.border = "hidden";
 
-            }   else if (blackInvisible.style.display == "flex") {
+            }  else if (blackInvisible.style.display == "flex") {
                         blackInvisible.style.display = "none";
                         blackCircle.style.display = "none";
                         blackBorder.style.border = "hidden";
@@ -271,12 +274,23 @@ window.onload = (event) => {
     });
 
 
+
+
+
     var primaryBookmark = document.getElementById("bookmark-icon");
     var replaceBookmarked = document.getElementById("bookmarked-icon");
-    
+
     primaryBookmark.addEventListener("click", event => {
         primaryBookmark.style.display = "none";
         replaceBookmarked.style.display = "flex";
     });
 
   };
+
+
+
+  function menuFunction() {
+      document.getElementById("dropdown").classList.toggle("show");
+  }
+
+
