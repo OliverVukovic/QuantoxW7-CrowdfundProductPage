@@ -1,5 +1,5 @@
-window.onload = (event) => {
-    console.log('page is fully loaded');
+//window.onload = (event) => {
+  //  console.log('page is fully loaded');
 
     var backProject = document.getElementById("openmodal-123");
     var modal = document.querySelector(".modal-container");
@@ -36,7 +36,6 @@ window.onload = (event) => {
     
 
 
-
     backProject.addEventListener("click", event => {
         modal.style.display = "flex";
     });
@@ -50,7 +49,7 @@ window.onload = (event) => {
     gotIt.addEventListener("click", event => {
         popUp.style.visibility = "hidden";
         modal.style.display = "none";
-        location.reload();
+        //location.reload();
     });
 
 
@@ -274,7 +273,9 @@ window.onload = (event) => {
                 }
     });
 
+   
 
+    // ----  Bookmark button ----
 
     var primaryBookmark = document.getElementById("bookmark-icon");
     var replaceBookmarked = document.getElementById("bookmarked-icon");
@@ -284,7 +285,9 @@ window.onload = (event) => {
         replaceBookmarked.style.display = "flex";
     });
 
+    
 
+    // ----  Dropdown menu ----
 
     var dropdown = document.getElementById("dropdown");
     var dropdownMenu = document.getElementById("menu123");
@@ -312,7 +315,64 @@ window.onload = (event) => {
 
 
 
-  };
+    // ----  Calculation ----
+
+    // function calculate() {
+
+    //     var x = document.getElementById("dollars").value;
+    //     var y = document.getElementById("bamboo-input").value;
+
+    //     var z = x + y;
+
+    //     x = 
+
+    // }
+
+        var x = parseFloat(document.getElementById('dollars').value);
+        var y = parseFloat(document.getElementById('bamboo-input').value);
+        var z = x + y;
+
+
+        greenBamboo.addEventListener("click", event => {
+
+            x.innerHTML += z;
+            console.log(123);
+
+        });
+
+
+
+    // ---- Add backers ----
+  
+        var i = 1507;
+        function buttonClick() {
+            i++;
+            document.getElementById('backers').value = i;
+            pledgeInvisible.style.display = "none";
+            pledgeCircle.style.display = "none";
+            pledgeBorder.style.border = "hidden";
+            bambooInvisible.style.display = "none";
+            bambooCircle.style.display = "none";
+            bambooBorder.style.border = "hidden";
+            blackInvisible.style.display = "none";
+            blackCircle.style.display = "none";
+            blackBorder.style.border = "hidden";
+        }
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+//  };
 
 
 

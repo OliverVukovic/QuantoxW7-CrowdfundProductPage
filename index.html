@@ -7,7 +7,7 @@
 href="./images/favicon-32x32.png">
   <title>Quantox-W7</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./main.js"></script>
+  
 </head>
 <body>
 
@@ -55,12 +55,15 @@ alt="bookmarked"><div class="button-text">Bookmarked</div></button>
         <div class="part2">
           <div class="data">
             <div class="first">
-              <h1 id="dollars">$89,914</h1>
+              <div class="sum">
+                <h1>$</h1>  
+                <h1 id="dollars">89,914</h1>
+              </div>
               <div class="p1">of $100,000 backed</div>
             </div>
 
             <div class="second">
-              <h1 id="backers">5,007</h1>
+              <input class="total-backers" id="backers" value="5,007">
               <div class="p1">total backers</div>
             </div>
 
@@ -161,8 +164,7 @@ Stock</button>
 
       <div class="modal-headline">
         <div class="close-modal">
-          <img class="modal-close-icon" id="closemodal"
-src="./images/icon-close-modal.svg" alt="close">
+          <img class="modal-close-icon" id="closemodal" src="./images/icon-close-modal.svg" alt="close">
         </div>
 
         <div class="b-t-p">
@@ -190,7 +192,7 @@ src="./images/icon-close-modal.svg" alt="close">
 
         <div class="invisible" id="pledge-invisible-modal">
           <div class="pop-btn-pledge">
-            <button class="green-pledge" id="green-pledge-modal">Continue</button>
+            <button class="green-pledge" id="green-pledge-modal" onclick="buttonClick()">Continue</button>
           </div>
         </div>
 
@@ -225,7 +227,7 @@ src="./images/icon-close-modal.svg" alt="close">
               <div class="dollar">$</div>
               <input class="input-modal" id="bamboo-input" type="number" value="25">
             </div>
-            <button class="green" id="green-bamboo-modal">Continue</button>
+            <button class="green" id="green-bamboo-modal" onclick="buttonClick()">Continue</button>
           </div>
         </div>
 
@@ -234,23 +236,20 @@ src="./images/icon-close-modal.svg" alt="close">
       <div class="modal-box" id="black-border">
         <div class="visible">
           <div class="circle" id="black-circle-outside">
-            <div class="invisible-circle"
-id="black-circle-invisible"></div>
+            <div class="invisible-circle" id="black-circle-invisible"></div>
           </div>
 
           <div class="textarea">
 
               <div class="headline1">
-                <div class="h5" id="black-edition-stand-modal">Black
-Edition Stand</div>
+                <div class="h5" id="black-edition-stand-modal">Black Edition Stand</div>
                 <div class="blue1">Pledge $75 or more</div>
               </div>
               <div class="no-left">64 <span>left</span></div>
 
 
             <div class="p3">
-              You get a Black Special Edition computer stand and a
-personal thank you. You'll be added to our Backer
+              You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer
               member list. Shipping is included.
             </div>
           </div>
@@ -262,11 +261,9 @@ personal thank you. You'll be added to our Backer
           <div class="pop-btn">
             <div class="white">
               <div class="dollar">$</div>
-              <input class="input-modal" id="black-input" type="number"
-value="75" inputmode="numeric">
+              <input class="input-modal" id="black-input" type="number" value="75" inputmode="numeric">
             </div>
-            <button class="green"
-id="green-black-edition">Continue</button>
+            <button class="green" id="green-black-edition" onclick="buttonClick()">Continue</button>
           </div>
         </div>
 
@@ -359,6 +356,8 @@ Bamboo Monitor Riser worldwide. You will get
     </div>
 
   </div>
+
+  <script src="./main.js"></script>
 
 </body>
 </html>

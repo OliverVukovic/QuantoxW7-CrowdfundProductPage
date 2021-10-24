@@ -218,6 +218,10 @@ button:hover {
     gap: 42px;
 }
 
+.sum {
+    display: flex;
+}
+
 .second {
     border-left: 1px solid rgba(0, 0, 0, .15);
     border-right: 1px solid rgba(0, 0, 0, .15);
@@ -229,6 +233,16 @@ h1 {
     font-size: 32px;
     line-height: 39px;
     font-weight: 700;
+}
+
+.total-backers {
+    width: 100%;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    font-family: 'Commissioner', sans-serif;
 }
 
 .p1 {
