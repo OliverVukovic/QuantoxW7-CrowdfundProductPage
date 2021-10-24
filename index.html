@@ -58,13 +58,13 @@ href="./images/favicon-32x32.png">
             <div class="first">
               <div class="sum">
                 <h1>$</h1>  
-                <h1 id="dollars" value="89914">89,914</h1>
+                <h1 id="dollars" value="89914">89914</h1>
               </div>
               <div class="p1">of $100,000 backed</div>
             </div>
 
             <div class="second">
-              <h1 class="total-backers" id="backers" value="5,007">5,007</h1>
+              <h1 class="total-backers" id="backers" value="5007">5,007</h1>
               <div class="p1">total backers</div>
             </div>
 
@@ -177,7 +177,7 @@ href="./images/favicon-32x32.png">
 
         <div class="invisible" id="pledge-invisible-modal">
           <div class="pop-btn-pledge">
-            <button class="green-pledge" id="green-pledge-modal" onclick="buttonPledge()">Continue</button>
+            <button class="green-pledge" id="green-pledge-modal" onclick="buttonBackers()">Continue</button>
           </div>
         </div>
 
@@ -211,7 +211,7 @@ href="./images/favicon-32x32.png">
               <div class="dollar">$</div>
               <input class="input-modal" id="bamboo-input" type="number" value="25">
             </div>
-            <button class="green" id="green-bamboo-modal" onclick="buttonBamboo()">Continue</button>
+            <button class="green" id="green-bamboo-modal" onclick="buttonBackers(); buttonBamboo();">Continue</button>
           </div>
         </div>
 
@@ -246,7 +246,7 @@ href="./images/favicon-32x32.png">
               <div class="dollar">$</div>
               <input class="input-modal" id="black-input" type="number" value="75">
             </div>
-            <button class="green" id="green-black-edition" onclick="buttonBlack()">Continue</button>
+            <button class="green" id="green-black-edition" onclick="buttonBackers(); buttonBlack();">Continue</button>
           </div>
         </div>
 
@@ -330,7 +330,7 @@ href="./images/favicon-32x32.png">
     </div>
 
   </div>
-
+  
   <script src="./main.js"></script>
 
 </body>

@@ -1,5 +1,6 @@
 //window.onload = (event) => {
-  //  console.log('page is fully loaded');
+  //  console.log('page is fully loaded');          --- u slucaju da je script-src u head-u
+
 
     var backProject = document.getElementById("openmodal-123");
     var modal = document.querySelector(".modal-container");
@@ -318,20 +319,6 @@
     // ----  Calculation ----
 
 
-
-
-
-    // function calculate() {
-
-    //     var x = document.getElementById("dollars").value;
-    //     var y = document.getElementById("bamboo-input").value;
-
-    //     var z = x + y;
-
-    //     x = 
-
-    // }
-
     // var x = parseFloat(document.getElementById('dollars').innerText);
 
     // var x = document.getElementById('dollars').innerText;
@@ -348,11 +335,11 @@
 
 
 
-// ---- Add backers ----
+// ---- Add backers and calculate $ ----
 
     var b = 5007;
     
-    function buttonPledge() {
+    function buttonBackers() {
 
         b++;
         document.getElementById('backers').innerText = b.toLocaleString();
@@ -366,47 +353,28 @@
         blackInvisible.style.display = "none";
         blackCircle.style.display = "none";
         blackBorder.style.border = "hidden";
- 
     }
+
 
     function buttonBamboo() {
 
-        var sum = document.getElementById("dollars").innerText;
-        var newAdd = document.getElementById("bamboo-input").value;
-        var newSum = +sum + +newAdd;
+        var sum = parseInt(document.getElementById("dollars").innerText);
+        var newAdd = parseInt(document.getElementById("bamboo-input").value);
+        var newSum = (sum + newAdd);
         
-        document.getElementById("dollars").innerText = newSum.toLocaleString();
-
-        b++;
-        document.getElementById('backers').innerText = b.toLocaleString();
-
-        pledgeInvisible.style.display = "none";
-        pledgeCircle.style.display = "none";
-        pledgeBorder.style.border = "hidden";
-        bambooInvisible.style.display = "none";
-        bambooCircle.style.display = "none";
-        bambooBorder.style.border = "hidden";
-        blackInvisible.style.display = "none";
-        blackCircle.style.display = "none";
-        blackBorder.style.border = "hidden";
- 
+        document.getElementById("dollars").innerText = newSum;
+        document.getElementById("bamboo-input").value = 25;
     }
+
 
     function buttonBlack() {
 
-        b++;
-        document.getElementById('backers').innerText = b.toLocaleString();
-
-        pledgeInvisible.style.display = "none";
-        pledgeCircle.style.display = "none";
-        pledgeBorder.style.border = "hidden";
-        bambooInvisible.style.display = "none";
-        bambooCircle.style.display = "none";
-        bambooBorder.style.border = "hidden";
-        blackInvisible.style.display = "none";
-        blackCircle.style.display = "none";
-        blackBorder.style.border = "hidden";
- 
+        var x = parseInt(document.getElementById("dollars").innerText);
+        var y = parseInt(document.getElementById("black-input").value);
+        var z = (x + y);
+        
+        document.getElementById("dollars").innerText = z;
+        document.getElementById("black-input").value = 75;
     }
 
 
@@ -418,50 +386,17 @@
     //     document.getElementById("dollars").innerText = newSum.toLocaleString();
     // }
 
-    function buttonBlack() {
-        var sum = document.getElementById("dollars").innerText;
-        var newAdd = document.getElementById("black-input").value;
-        var newSum = +sum + +newAdd;
+    // function buttonBlack() {
+    //     var sum = document.getElementById("dollars").innerText;
+    //     var newAdd = document.getElementById("black-input").value;
+    //     var newSum = +sum + +newAdd;
         
-        document.getElementById("dollars").innerText = newSum;
-    }
+    //     document.getElementById("dollars").innerText = newSum.toLocaleString();
+
+    //   ----  pronaci resenje kao zamenu za "toLocaleString"  ----
+    // }
 
 
-
+    //   ----  uraditi % line  ----
 
 //  };
-
-
-
-
-
-/*
-
-
-    
-        <p>Click the button to calculate x.</p><br/>
-        <button onclick="buttonClick()">Try it</button>
-        <br/>
-        
-        
-        <br/>Enter first number:
-        <h1 id="txt1">89914</h1> <br>
-        
-        
-        
-        Enter second number:
-        <input type="text" id="txt2" name="text2" value="25">
-        <p id="demo"></p>
-
-        <script>
-            function buttonClick() {
-                var y = document.getElementById("txt1").innerText;
-                var z = document.getElementById("txt2").value;
-                var x = +y + +z;
-                
-                document.getElementById("txt1").innerText = x;
-            }
-        </script>
-    </body>
-</html>
-*/
