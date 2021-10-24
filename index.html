@@ -33,22 +33,23 @@ href="./images/favicon-32x32.png">
       <div class="container">
 
         <div class="part1">
-          <img class="small-logo" src="./images/logo-mastercraft.svg"
-alt="Mastercraft-Logo">
+          <img class="small-logo" src="./images/logo-mastercraft.svg" alt="Mastercraft-Logo">
           <div class="text">
             <h2>Mastercraft Bamboo Monitor Riser</h2>
-            <p>A beautiful & handcrafted monitor stand to reduce neck
-and eye strain.</p>
+            <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
           </div>
           <div class="buttons">
-            <button class="back-this-project" id="openmodal-123">Back
-this project</button>
-            <button class="bookmark" id="bookmark-icon"><img
-src="./images/icon-bookmark.svg" alt="bookmark"><div
-class="button-text">Bookmark</div></button>
-            <button class="bookmark-green" id="bookmarked-icon"><img
-class="bm-ic" src="./images/icon-bookmark-hover.png"
-alt="bookmarked"><div class="button-text">Bookmarked</div></button>
+            <button class="back-this-project" id="openmodal-123">Back this project</button>
+
+            <button class="bookmark" id="bookmark-icon">
+              <img src="./images/icon-bookmark.svg" alt="bookmark">
+              <div class="button-text">Bookmark</div>
+            </button>
+
+            <button class="bookmark-green" id="bookmarked-icon">
+              <img class="bm-ic" src="./images/icon-bookmark-hover.png" alt="bookmarked">
+              <div class="button-text">Bookmarked</div>
+            </button>
           </div>
         </div>
 
@@ -57,13 +58,13 @@ alt="bookmarked"><div class="button-text">Bookmarked</div></button>
             <div class="first">
               <div class="sum">
                 <h1>$</h1>  
-                <h1 id="dollars">89,914</h1>
+                <h1 id="dollars" value="89914">89,914</h1>
               </div>
               <div class="p1">of $100,000 backed</div>
             </div>
 
             <div class="second">
-              <input class="total-backers" id="backers" value="5,007">
+              <h1 class="total-backers" id="backers" value="5,007">5,007</h1>
               <div class="p1">total backers</div>
             </div>
 
@@ -83,18 +84,10 @@ alt="bookmarked"><div class="button-text">Bookmarked</div></button>
             <h3>About this project</h3>
 
             <div class="p2">
-              The Mastercraft Bamboo Monitor Riser is a sturdy and
-stylish platform that elevates your screen
-              to a more comfortable viewing height. Placing your monitor
-at eye level has the potential to improve
-              your posture and make you more comfortable while at work,
-helping you stay focused on the task at hand.
+              The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
             </div>
             <div class="p2">
-              Featuring artisan craftsmanship, the simplicity of design
-creates extra desk space below your computer
-              to allow notepads, pens, and USB sticks to be stored under
-the stand.
+              Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.
             </div>
           </div>
 
@@ -104,9 +97,7 @@ the stand.
               <div class="blue">Pledge $25 or more</div>
             </div>
             <div class="p2">
-              You get an ergonomic stand made of natural bamboo. You've
-helped us launch our promotional campaign, and
-              you'll be added to a special Backer member list.
+              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
             </div>
             <div class="numbers">
               <h1>101 <span> left</span></h1>
@@ -120,9 +111,7 @@ helped us launch our promotional campaign, and
               <div class="blue">Pledge $75 or more</div>
             </div>
             <div class="p2">
-              You get a Black Special Edition computer stand and a
-personal thank you. You'll be added to our Backer
-              member list. Shipping is included.
+              You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </div>
             <div class="numbers">
               <h1>64 <span> left</span></h1>
@@ -136,14 +125,11 @@ personal thank you. You'll be added to our Backer
               <div class="blue">Pledge $200 or more</div>
             </div>
             <div class="p2">
-              You get two Special Edition Mahogany stands, a Backer
-T-Shirt, and a personal thank you. You'll be added
-              to our Backer member list. Shipping is included.
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </div>
             <div class="numbers">
               <h1>0 <span> left</span></h1>
-              <button class="stock" id="mahogany-reward">Out of
-Stock</button>
+              <button class="stock" id="mahogany-reward">Out of Stock</button>
             </div>
           </div>
         </div>
@@ -183,8 +169,7 @@ Stock</button>
             <div class="h5" id="pledge-with-no-reward">Pledge with no reward</div>
 
             <div class="p3">
-              Choose to support us without a reward if you simply believe in our project. As a backer,
-              you will be signed up to receive product updates via email.
+              Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.
             </div>
           </div>
 
@@ -192,7 +177,7 @@ Stock</button>
 
         <div class="invisible" id="pledge-invisible-modal">
           <div class="pop-btn-pledge">
-            <button class="green-pledge" id="green-pledge-modal" onclick="buttonClick()">Continue</button>
+            <button class="green-pledge" id="green-pledge-modal" onclick="buttonPledge()">Continue</button>
           </div>
         </div>
 
@@ -213,8 +198,7 @@ Stock</button>
             <div class="no-left">101 <span>left</span></div>
             
             <div class="p3">
-              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-              you'll be added to a special Backer member list.
+              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
             </div>
           </div>
 
@@ -227,7 +211,7 @@ Stock</button>
               <div class="dollar">$</div>
               <input class="input-modal" id="bamboo-input" type="number" value="25">
             </div>
-            <button class="green" id="green-bamboo-modal" onclick="buttonClick()">Continue</button>
+            <button class="green" id="green-bamboo-modal" onclick="buttonBamboo()">Continue</button>
           </div>
         </div>
 
@@ -249,8 +233,7 @@ Stock</button>
 
 
             <div class="p3">
-              You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer
-              member list. Shipping is included.
+              You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </div>
           </div>
 
@@ -261,9 +244,9 @@ Stock</button>
           <div class="pop-btn">
             <div class="white">
               <div class="dollar">$</div>
-              <input class="input-modal" id="black-input" type="number" value="75" inputmode="numeric">
+              <input class="input-modal" id="black-input" type="number" value="75">
             </div>
-            <button class="green" id="green-black-edition" onclick="buttonClick()">Continue</button>
+            <button class="green" id="green-black-edition" onclick="buttonBlack()">Continue</button>
           </div>
         </div>
 
@@ -272,24 +255,20 @@ Stock</button>
       <div class="modal-opacity" id="mahogany-border">
         <div class="visible">
           <div class="circle" id="mahogany-circle-outside">
-            <div class="invisible-circle"
-id="mahogany-circle-invisible"></div>
+            <div class="invisible-circle" id="mahogany-circle-invisible"></div>
           </div>
 
           <div class="textarea">
   
               <div class="headline1">
-                <div class="h5" id="mahogany-special-modal">Mahogany
-Special Edition</div>
+                <div class="h5" id="mahogany-special-modal">Mahogany Special Edition</div>
                 <div class="blue1">Pledge $200 or more</div>
               </div>
               <div class="no-left">0 <span>left</span></div>
   
 
             <div class="p3">
-              You get two Special Edition Mahogany stands, a Backer
-T-Shirt, and a personal thank you. You'll be added
-              to our Backer member list. Shipping is included.
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </div>
           </div>
 
@@ -300,11 +279,9 @@ T-Shirt, and a personal thank you. You'll be added
           <div class="pop-btn">
             <div class="white">
               <div class="dollar">$</div>
-              <input class="input-modal" id="mahogany-input"
-type="number" value="200">
+              <input class="input-modal" id="mahogany-input" type="number" value="200">
             </div>
-            <button class="green"
-id="green-mahogany-modal">Continue</button>
+            <button class="green" id="green-mahogany-modal">Continue</button>
           </div>
         </div>
 
@@ -320,13 +297,10 @@ id="green-mahogany-modal">Continue</button>
 
   <div class="pop-up" id="pop-up-123">
     <div class="main-popup">
-      <div class="check"><img src="./images/icon-check.svg"
-alt="Check"></div>
+      <div class="check"><img src="./images/icon-check.svg" alt="Check"></div>
       <h4>Thanks for your support!</h4>
       <div class="p2">
-        Your pledge brings us one step closer to sharing Mastercraft
-Bamboo Monitor Riser worldwide. You will get
-        an email once our campaign is completed.
+        Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.
       </div>
         <button class="got-it" id="gotit-btn">Got it!</button>
     </div>

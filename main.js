@@ -317,6 +317,10 @@
 
     // ----  Calculation ----
 
+
+
+
+
     // function calculate() {
 
     //     var x = document.getElementById("dollars").value;
@@ -328,46 +332,99 @@
 
     // }
 
-        var x = parseFloat(document.getElementById('dollars').value);
-        var y = parseFloat(document.getElementById('bamboo-input').value);
-        var z = x + y;
+    // var x = parseFloat(document.getElementById('dollars').innerText);
+
+    // var x = document.getElementById('dollars').innerText;
+    // var y = parseFloat(document.getElementById('bamboo-input').value);
+    // var result = (x + y);
 
 
-        greenBamboo.addEventListener("click", event => {
+    // greenBamboo.addEventListener("click", event => {
 
-            x.innerHTML += z;
-            console.log(123);
+    //     document.getElementById('dollars').innerText = result.toLocaleString();
+    //     console.log(result);
 
-        });
-
-
-
-    // ---- Add backers ----
-  
-        var i = 1507;
-        function buttonClick() {
-            i++;
-            document.getElementById('backers').value = i;
-            pledgeInvisible.style.display = "none";
-            pledgeCircle.style.display = "none";
-            pledgeBorder.style.border = "hidden";
-            bambooInvisible.style.display = "none";
-            bambooCircle.style.display = "none";
-            bambooBorder.style.border = "hidden";
-            blackInvisible.style.display = "none";
-            blackCircle.style.display = "none";
-            blackBorder.style.border = "hidden";
-        }
+    // });
 
 
 
+// ---- Add backers ----
 
+    var b = 5007;
+    
+    function buttonPledge() {
+
+        b++;
+        document.getElementById('backers').innerText = b.toLocaleString();
+
+        pledgeInvisible.style.display = "none";
+        pledgeCircle.style.display = "none";
+        pledgeBorder.style.border = "hidden";
+        bambooInvisible.style.display = "none";
+        bambooCircle.style.display = "none";
+        bambooBorder.style.border = "hidden";
+        blackInvisible.style.display = "none";
+        blackCircle.style.display = "none";
+        blackBorder.style.border = "hidden";
+ 
+    }
+
+    function buttonBamboo() {
+
+        var sum = document.getElementById("dollars").innerText;
+        var newAdd = document.getElementById("bamboo-input").value;
+        var newSum = +sum + +newAdd;
         
+        document.getElementById("dollars").innerText = newSum.toLocaleString();
+
+        b++;
+        document.getElementById('backers').innerText = b.toLocaleString();
+
+        pledgeInvisible.style.display = "none";
+        pledgeCircle.style.display = "none";
+        pledgeBorder.style.border = "hidden";
+        bambooInvisible.style.display = "none";
+        bambooCircle.style.display = "none";
+        bambooBorder.style.border = "hidden";
+        blackInvisible.style.display = "none";
+        blackCircle.style.display = "none";
+        blackBorder.style.border = "hidden";
+ 
+    }
+
+    function buttonBlack() {
+
+        b++;
+        document.getElementById('backers').innerText = b.toLocaleString();
+
+        pledgeInvisible.style.display = "none";
+        pledgeCircle.style.display = "none";
+        pledgeBorder.style.border = "hidden";
+        bambooInvisible.style.display = "none";
+        bambooCircle.style.display = "none";
+        bambooBorder.style.border = "hidden";
+        blackInvisible.style.display = "none";
+        blackCircle.style.display = "none";
+        blackBorder.style.border = "hidden";
+ 
+    }
 
 
+    // function buttonBamboo() {
+    //     var sum = document.getElementById("dollars").innerText;
+    //     var newAdd = document.getElementById("bamboo-input").value;
+    //     var newSum = +sum + +newAdd;
+        
+    //     document.getElementById("dollars").innerText = newSum.toLocaleString();
+    // }
 
-
-
+    function buttonBlack() {
+        var sum = document.getElementById("dollars").innerText;
+        var newAdd = document.getElementById("black-input").value;
+        var newSum = +sum + +newAdd;
+        
+        document.getElementById("dollars").innerText = newSum;
+    }
 
 
 
@@ -376,3 +433,35 @@
 
 
 
+
+
+/*
+
+
+    
+        <p>Click the button to calculate x.</p><br/>
+        <button onclick="buttonClick()">Try it</button>
+        <br/>
+        
+        
+        <br/>Enter first number:
+        <h1 id="txt1">89914</h1> <br>
+        
+        
+        
+        Enter second number:
+        <input type="text" id="txt2" name="text2" value="25">
+        <p id="demo"></p>
+
+        <script>
+            function buttonClick() {
+                var y = document.getElementById("txt1").innerText;
+                var z = document.getElementById("txt2").value;
+                var x = +y + +z;
+                
+                document.getElementById("txt1").innerText = x;
+            }
+        </script>
+    </body>
+</html>
+*/

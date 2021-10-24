@@ -243,6 +243,7 @@ h1 {
     border: none;
     text-align: center;
     font-family: 'Commissioner', sans-serif;
+    outline: none;
 }
 
 .p1 {
@@ -976,6 +977,10 @@ input::-webkit-inner-spin-button {
 
     .green {
         width: 115px;
+    }
+
+    .pop-btn-pledge {
+        justify-content: flex-end;
     }
 
 
