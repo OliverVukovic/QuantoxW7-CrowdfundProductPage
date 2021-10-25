@@ -335,22 +335,53 @@
 
 
     var i = 101;
+    var boxBamboo = document.getElementById("box-bamboo");
 
   function buttonLeft() {
 
       i--;
       document.getElementById('bamboo-left').innerText = i;
       document.getElementById('bamboo-modal-left').innerText = i;
+      if (i <= 0) {
+        boxBamboo.classList.add("mahogany");
+        bambooReward.innerHTML = mahoganyReward.innerHTML;
+        bambooReward.classList.add("stock");
+        bambooReward.disabled = true;
+
+        bambooBorder.classList.add("modal-opacity");
+        greenBamboo.innerHTML = mahoganyReward.innerHTML;
+        greenBamboo.style.background = "#2f2f2f";
+        greenBamboo.style.width = "157px";
+        greenBamboo.disabled = true;
+
+        alert("Out of Stock!");
+
   }
 
+  }
 
-  var a = 4;
+  var a = 64;
+  var boxBlack = document.getElementById("box-black");
 
   function blackLeft() {
 
       a--;
       document.getElementById('black-left').innerText = a;
       document.getElementById('black-modal-left').innerText = a;
+      if (a <= 0) {
+          boxBlack.classList.add("mahogany");
+          blackReward.innerHTML = mahoganyReward.innerHTML;
+          blackReward.classList.add("stock");
+          blackReward.disabled = true;
+
+          blackBorder.classList.add("modal-opacity");
+          blackBamboo.innerHTML = mahoganyReward.innerHTML;
+          blackBamboo.style.background = "#2f2f2f";
+          blackBamboo.style.width = "157px";
+          blackBamboo.disabled = true;
+
+          alert("Out of Stock!");
+      }
   }
 
 
@@ -378,22 +409,25 @@
 
     function buttonBamboo() {
 
-        var sum = parseInt(document.getElementById("dollars").innerText);
-        var newAdd = parseInt(document.getElementById("bamboo-input").value);
+        var sum = document.getElementById("dollars").innerText;
+        sum = Number(sum.replace(/\,/g, ''));
+        console.log(sum);
+        var newAdd = Number(document.getElementById("bamboo-input").value);
         var newSum = (sum + newAdd);
         
-        document.getElementById("dollars").innerText = newSum;
+        document.getElementById("dollars").innerText = newSum.toLocaleString();
         document.getElementById("bamboo-input").value = 25;
     }
 
 
     function buttonBlack() {
 
-        var x = parseInt(document.getElementById("dollars").innerText);
-        var y = parseInt(document.getElementById("black-input").value);
+        var x = document.getElementById("dollars").innerText;
+        x = Number(x.replace(/\,/g, ''));
+        var y = Number(document.getElementById("black-input").value);
         var z = (x + y);
         
-        document.getElementById("dollars").innerText = z;
+        document.getElementById("dollars").innerText = z.toLocaleString();
         document.getElementById("black-input").value = 75;
     }
 

@@ -40,7 +40,7 @@ header {
 
 .nav-letters {
     width: 225px;
-    height: auto;
+    height: 20px;
     font-size: 13px;
     line-height: 16px;
     display: flex;
@@ -363,6 +363,8 @@ span {
 /*.stock:hover {
     background-color: #2f2f2f;
 }*/
+
+
 
 
 
