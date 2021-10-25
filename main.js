@@ -419,6 +419,7 @@
             alert ("You can only enter an amount higher than 25$");
             document.getElementById("bamboo-input").value = 25;
         } else {
+            //greenBamboo.disabled = false;
             document.getElementById("dollars").innerText = newSum.toLocaleString();
             document.getElementById("bamboo-input").value = 25;
         };
@@ -431,17 +432,14 @@
         x = Number(x.replace(/\,/g, ''));
         var y = Number(document.getElementById("black-input").value);
         var z = (x + y);
-        
-        if (y <= 74) {
-            //greenBlack.disabled = true;
+
+        if (newAdd <= 74) {
             alert ("You can only enter an amount higher than 75$");
             document.getElementById("black-input").value = 75;
         } else {
-            //greenBlack.disabled = false;
             document.getElementById("dollars").innerText = z.toLocaleString();
             document.getElementById("black-input").value = 75;
         };
-        
     }
 
 
