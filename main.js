@@ -360,7 +360,7 @@
 
   }
 
-  var a = 64;
+  var a = 4;
   var boxBlack = document.getElementById("box-black");
 
   function blackLeft() {
@@ -375,10 +375,10 @@
           blackReward.disabled = true;
 
           blackBorder.classList.add("modal-opacity");
-          blackBamboo.innerHTML = mahoganyReward.innerHTML;
-          blackBamboo.style.background = "#2f2f2f";
-          blackBamboo.style.width = "157px";
-          blackBamboo.disabled = true;
+          greenBlack.innerHTML = mahoganyReward.innerHTML;
+          greenBlack.style.background = "#2f2f2f";
+          greenBlack.style.width = "157px";
+          greenBlack.disabled = true;
 
           alert("Out of Stock!");
       }
