@@ -354,13 +354,12 @@
         greenBamboo.style.width = "157px";
         greenBamboo.disabled = true;
 
-        alert("Out of Stock!");
+        alert("Out of Stock!"); 
+  };
 
   }
 
-  }
-
-  var a = 4;
+  var a = 64;
   var boxBlack = document.getElementById("box-black");
 
   function blackLeft() {
@@ -381,7 +380,7 @@
           greenBlack.disabled = true;
 
           alert("Out of Stock!");
-      }
+      };
   }
 
 
@@ -411,12 +410,18 @@
 
         var sum = document.getElementById("dollars").innerText;
         sum = Number(sum.replace(/\,/g, ''));
-        console.log(sum);
         var newAdd = Number(document.getElementById("bamboo-input").value);
         var newSum = (sum + newAdd);
         
-        document.getElementById("dollars").innerText = newSum.toLocaleString();
-        document.getElementById("bamboo-input").value = 25;
+        
+        if (newAdd <= 24) {
+            //greenBamboo.disabled = true;
+            alert ("You can only enter an amount higher than 25$");
+            document.getElementById("bamboo-input").value = 25;
+        } else {
+            document.getElementById("dollars").innerText = newSum.toLocaleString();
+            document.getElementById("bamboo-input").value = 25;
+        };
     }
 
 
@@ -427,25 +432,20 @@
         var y = Number(document.getElementById("black-input").value);
         var z = (x + y);
         
-        document.getElementById("dollars").innerText = z.toLocaleString();
-        document.getElementById("black-input").value = 75;
+        if (y <= 74) {
+            //greenBlack.disabled = true;
+            alert ("You can only enter an amount higher than 75$");
+            document.getElementById("black-input").value = 75;
+        } else {
+            //greenBlack.disabled = false;
+            document.getElementById("dollars").innerText = z.toLocaleString();
+            document.getElementById("black-input").value = 75;
+        };
+        
     }
 
 
-    // function buttonBamboo() {
-    //     var sum = document.getElementById("dollars").innerText;
-    //     var newAdd = document.getElementById("bamboo-input").value;
-    //     var newSum = +sum + +newAdd;
-        
-    //     document.getElementById("dollars").innerText = newSum.toLocaleString();
-    // }
 
-    // function buttonBlack() {
-    //     var sum = document.getElementById("dollars").innerText;
-    //     var newAdd = document.getElementById("black-input").value;
-    //     var newSum = +sum + +newAdd;
-        
-    //     document.getElementById("dollars").innerText = newSum.toLocaleString();
 
     //   ----  pronaci resenje kao zamenu za "toLocaleString"  ----
     // }
