@@ -247,7 +247,6 @@ h1 {
 }
 
 .p1 {
-    margin-top: 8px;
     font-size: 15px;
     line-height: 18px;
     color: #7a7a7a;
@@ -316,6 +315,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .blue {
@@ -329,6 +329,13 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.number-left {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 span {
@@ -515,12 +522,18 @@ h4 {
     color: #3cb3ab;
 }
 
+.number-modal-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 28px;
+    gap: 5px;
+}
+
 .no-left {
-    text-align: end;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
-    padding-right: 28px;
 }
 
 .modal-opacity {

@@ -334,6 +334,26 @@
     // });
 
 
+    var i = 101;
+
+  function buttonLeft() {
+
+      i--;
+      document.getElementById('bamboo-left').innerText = i;
+      document.getElementById('bamboo-modal-left').innerText = i;
+  }
+
+
+  var a = 4;
+
+  function blackLeft() {
+
+      a--;
+      document.getElementById('black-left').innerText = a;
+      document.getElementById('black-modal-left').innerText = a;
+  }
+
+
 
 // ---- Add backers and calculate $ ----
 

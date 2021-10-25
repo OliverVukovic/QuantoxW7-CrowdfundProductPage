@@ -100,7 +100,12 @@ href="./images/favicon-32x32.png">
               You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
             </div>
             <div class="numbers">
-              <h1>101 <span> left</span></h1>
+
+              <div class="number-left">
+                <h1 id="bamboo-left" value="101">101</h1>
+                <div class="p1">left</div>
+              </div>
+           
               <button id="bamboo-reward">Select Reward</button>
             </div>
           </div>
@@ -114,7 +119,12 @@ href="./images/favicon-32x32.png">
               You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </div>
             <div class="numbers">
-              <h1>64 <span> left</span></h1>
+
+              <div class="number-left">
+                <h1 id="black-left" value="64">64</h1>
+                <div class="p1">left</div>
+              </div>
+              
               <button id="black-edition-reward">Select Reward</button>
             </div>
           </div>
@@ -195,8 +205,12 @@ href="./images/favicon-32x32.png">
               <div class="h5" id="bamboo-stand-modal">Bamboo Stand</div>
               <div class="blue1">Pledge $25 or more</div>
             </div>
-            <div class="no-left">101 <span>left</span></div>
-            
+
+            <div class="number-modal-left">
+              <div class="no-left" id="bamboo-modal-left" value="101">101</div>
+              <div class="p1">left</div>
+            </div>
+
             <div class="p3">
               You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
             </div>
@@ -211,7 +225,7 @@ href="./images/favicon-32x32.png">
               <div class="dollar">$</div>
               <input class="input-modal" id="bamboo-input" type="number" value="25">
             </div>
-            <button class="green" id="green-bamboo-modal" onclick="buttonBackers(); buttonBamboo();">Continue</button>
+            <button class="green" id="green-bamboo-modal" onclick="buttonBackers(); buttonBamboo(); buttonLeft()">Continue</button>
           </div>
         </div>
 
@@ -229,7 +243,11 @@ href="./images/favicon-32x32.png">
                 <div class="h5" id="black-edition-stand-modal">Black Edition Stand</div>
                 <div class="blue1">Pledge $75 or more</div>
               </div>
-              <div class="no-left">64 <span>left</span></div>
+
+              <div class="number-modal-left">
+                <div class="no-left" id="black-modal-left" value="64">64</div>
+                <div class="p1">left</div>
+              </div>
 
 
             <div class="p3">
@@ -246,7 +264,7 @@ href="./images/favicon-32x32.png">
               <div class="dollar">$</div>
               <input class="input-modal" id="black-input" type="number" value="75">
             </div>
-            <button class="green" id="green-black-edition" onclick="buttonBackers(); buttonBlack();">Continue</button>
+            <button class="green" id="green-black-edition" onclick="buttonBackers(); buttonBlack(); blackLeft()">Continue</button>
           </div>
         </div>
 
@@ -264,7 +282,11 @@ href="./images/favicon-32x32.png">
                 <div class="h5" id="mahogany-special-modal">Mahogany Special Edition</div>
                 <div class="blue1">Pledge $200 or more</div>
               </div>
-              <div class="no-left">0 <span>left</span></div>
+
+              <div class="number-modal-left">
+                <div class="no-left">0</div>
+                <div class="p1">left</div>
+              </div>
   
 
             <div class="p3">
